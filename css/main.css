@@ -1,0 +1,974 @@
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #FFF;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+body{
+  background-color: #191919;
+
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 4px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@font-face {
+  font-family: "Monument Grotesk";
+  src: url('/fonts/MonumentGrotesk-Bold.otf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Monument Grotesk";
+  src: url('/fonts/MonumentGrotesk-Italic.otf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Monument Grotesk";
+  src: url('/fonts/MonumentGrotesk-Medium.otf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Monument Grotesk Mono";
+  src: url('/fonts/MonumentGrotesk-Mono.otf');
+}
+
+@font-face {
+  font-family: "Monument Grotesk";
+  src: url('/fonts/MonumentGrotesk-Regular.otf');
+  font-weight: 400;
+}
+
+.navbar-dark{
+  background-color: #191919 !important;
+}
+
+.button-text-dark{
+  font-family: Monument Grotesk;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.button-text-light{
+  font-family: Monument Grotesk;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.button-primary{
+  padding: 15px 20px;
+  background-color: white;
+  font-family: Monument Grotesk;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+}
+
+.button-primary:hover{
+  background-color: #474747;
+  color:#FFFFFF;
+}
+
+.button-secondary{
+  padding: 15px 20px;
+  background: none;
+  font-family: Monument Grotesk;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+}
+
+.button-secondary:hover{
+  background-color: #474747;
+  color:#FFFFFF;
+}
+
+.button-tertiary{
+  padding: 15px 20px;
+  font-family: Monument Grotesk;
+  background: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+}
+
+.button-tertiary:hover{
+  color:#FFFFFF;
+}
+
+.button-apply{
+  padding: 15px 28px;
+  background-color: white;
+  font-family: Monument Grotesk;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+}
+
+.vertical-center {
+  margin: 0;
+  position: inherit;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.header-text {
+  margin: 0;
+  position: inherit;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.header-text2 {
+  margin: 0;
+  position: inherit;
+  padding-top: 5%;
+}
+
+.section-2-img{
+  padding-right: 0;
+}
+
+.section-2-row{
+  margin-bottom: 30px;
+}
+
+.section-5-row{
+  margin-bottom: 30px;
+}
+
+.header-video{
+  z-index: -10;
+  width: 80%;
+  opacity: 0.9;
+}
+
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  h1{
+    font-family: Monument Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  h2{
+    font-family: Monument Grotesk;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 32px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  h3{
+    font-family: Monument Grotesk;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  p{
+    font-family: Monument Grotesk;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .phone{
+    z-index: -10;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    transform: translateX(45vw);
+  }
+
+  .phone img{
+    height: 70vh;
+  }
+
+  .phone.animation1{
+    transform: translateX(0vw);
+    transition: 0.2s;
+  }
+  .header-copy.animation1-1{
+    opacity: 0;
+  }
+
+  .header-copy {
+    transition: 0.2s;
+  }
+
+
+.header-text2 {
+  margin: 0;
+  position: inherit;
+  padding-top: 10%;
+}
+
+.img-header {
+  /* max-width: 1200px; /* img src width (if known) */
+  max-height: 200px;
+  overflow: hidden;
+  width: 100%;
+  margin:0;
+}
+
+img.scale {
+  /* corrects inline gap in enclosing div */
+  display: block;
+  max-width: 100%;
+  /* just in case, to force correct aspect ratio */
+  height: auto !important;
+  width: auto\9; /* ie8+9 */
+  /* lt ie8 */
+  -ms-interpolation-mode: bicubic;
+  box-shadow: 0 0 8px 8px black inset;
+  opacity: .85;
+  background:rgba(0,0,0,0.6);
+
+}
+
+
+  .phone.animation2{
+    opacity: 0.1;
+  }
+
+  .section-0{
+    margin: 0;
+  }
+
+
+  .section-1{
+    margin: 0 5px;
+    height: 100vh;
+  }
+
+  .section-2{
+    margin: 0 5px;
+    opacity: 0;
+  }
+
+  .section-2-trigger{
+    height: 200px;
+  }
+
+  .paragraph-2{
+    font-family: Monument Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 0;
+  }
+
+  .paragraph-3{
+  font-family: Monument Grotesk;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  }
+
+  .paragraph-4{
+  font-family: Monument Grotesk;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  padding-bottom: 11px;
+  }
+
+  .section-2-row{
+    margin-bottom: 20px;
+  }
+
+  .section-3{
+    margin: 0 5px;
+    opacity: 0;
+  }
+
+  .mission{
+    padding-top: 40px;
+  }
+
+  .section-4{
+    margin: 0 5px;
+    opacity: 0;
+  }
+
+  .section-5{
+    margin: 0 5px;
+    opacity: 0;
+  }
+
+  .section-5-row{
+    margin-bottom: 20px;
+  }
+
+  .form-control::placeholder {
+    color: #757575;
+    font-size: 16px;
+
+  }
+
+  input::placeholder {
+    color: #757575;
+    font-size: 16px;
+  }
+
+  input{
+    font-family: Monument Grotesk;
+    background-color: #474747;
+    border-radius: 15px;
+    color: #FFFFFF;
+    text-indent:8px;
+    font-size: 17px;
+    border-color: #000000 !important;
+    border-bottom-color: #000000 !important;
+    border-bottom-right-radius: #000000 !important;
+    border-width: 2px;
+
+  }
+
+  textarea{
+    font-family: Monument Grotesk;
+    background-color: #474747 !important;
+    border-radius: 15px;
+    color: #FFFFFF !important;
+    text-indent: 3px;
+    border-color: #000000 !important;
+    border-width: 2px;
+    width: 90% !important;
+  }
+
+  .confirmation-modal{
+  padding-top: 50%;
+  height: 100%;
+  width: 100%;
+  background-color:rgba(0,0,0,0.9);
+  position: fixed;
+  z-index: 2000;
+  color: #FFFFFF;
+  text-align: center;
+  display: none !important;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+  .form-control{
+    width: 85%;
+    border-width: 2px;
+    border-radius: 15px;
+
+  }
+
+  footer{
+    margin: 150px 5px 30px 5px !important;
+  }
+
+  footer img{
+    margin-bottom: 20px;
+  }
+
+  footer .button-tertiary{
+    padding-left: 0;
+  }
+
+  .show{
+    opacity: 1;
+    transition: 1.5s;
+  }
+}
+
+/* Web */
+@media (min-width: 769px) {
+  h1{
+    font-family: Monument Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 68px;
+    line-height: 68px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+
+  h2{
+    font-family: Monument Grotesk;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  h3{
+    font-family: Monument Grotesk;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  h4{
+    font-family: Monument Grotesk;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+  }
+
+  p{
+    font-family: Monument Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+
+  input::placeholder {
+    color: #757575;
+    font-size: 16px;
+  }
+
+  .form-control::placeholder {
+    color: #757575;
+    font-size: 16px;
+  }
+
+  input{
+    font-family: Monument Grotesk;
+    background-color: #474747;
+    border-radius: 15px;
+    border-width: 2px;
+    color: #FFFFFF;
+    text-indent:10px;
+    border-color: #000000 !important;
+    border-bottom-color: #000000 !important;
+    border-bottom-right-radius: #000000 !important;
+
+  }
+
+  textarea{
+    font-family: Monument Grotesk;
+    background-color: #474747 !important;
+    border-radius: 15px !important;
+    color: #FFFFFF !important;
+    text-indent:10px;
+    border-color: #000000 !important;
+    border-width: 2px !important;
+    width: 100%;
+  }
+
+
+.img-header {
+  overflow: hidden;
+  max-height: 320px;
+}
+
+
+img.scale {
+  margin: 0;
+  /* corrects inline gap in enclosing div */
+  display: block;
+  max-width: 100%;
+  /* just in case, to force correct aspect ratio */
+  height: auto !important;
+  width: auto\9; /* ie8+9 */
+  /* lt ie8 */
+  -ms-interpolation-mode: bicubic;
+  opacity: .85;
+  background:rgba(0,0,0,0.6);
+
+}
+
+img.test {
+    object-fit: scale-down;
+    display: block;
+    object-position: 50% 100%;
+    width: 100%;
+  }
+
+
+  .test{
+        background-color: #ffffff
+
+  }
+
+  .phone{
+    z-index: -10;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    transform: translateX(30vw);
+  }
+
+  .phone img{
+    height: 70vh;
+  }
+
+  .header-copy.animation1-1{
+    opacity: 1;
+  }
+
+  .header-copy{
+    transition: 0.2s;
+  }
+
+  .section-1{
+    max-width: 1020px;
+    margin: auto;
+    height: 100vh;
+  }
+
+  .section-2{
+    opacity: 0;
+    max-width: 1020px;
+    margin: auto;
+    margin-bottom: 100px;
+  }
+
+  .section-2-trigger{
+    height: 200px;
+  }
+
+  .paragraph-2{
+    font-family: Monument Grotesk;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+  }
+
+  .confirmation-modal{
+  padding-top: 275px;
+  height: 100%;
+  width: 100%;
+  background-color:rgba(0,0,0,0.9);
+  position: fixed;
+  z-index: 2000;
+  color: #FFFFFF;
+  text-align: center;
+  display: none !important;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+  .paragraph-3{
+  font-family: Monument Grotesk;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  }
+
+  .paragraph-4{
+  font-family: Monument Grotesk;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  padding-bottom: 12px;
+  }
+
+  .section-2-row{
+    margin-bottom: 20px;
+  }
+
+  .section-3{
+    opacity: 0;
+    max-width: 1020px;
+    margin: auto;
+    margin-bottom: 100px;
+  }
+
+  .mission{
+    padding-top: 40px;
+  }
+
+  .section-4{
+    margin: 0 5px;
+    opacity: 0;
+    max-width: 1020px;
+    margin: auto
+  }
+
+  .section-5{
+    opacity: 0;
+    max-width: 1020px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+   .section-5-row{
+    margin-bottom: 20px;
+  }
+
+  footer{
+    margin: 250px auto 30px auto !important;
+    max-width: 1020px;
+  }
+
+  footer img{
+    margin-bottom: 20px;
+  }
+
+  footer .button-tertiary{
+    padding-left: 0;
+  }
+
+  .show{
+    opacity: 1;
+    transition: 1.5s;
+  }
+}
+
+.manifesto-header{
+  margin: 200px auto 5px auto;
+  max-width: 1020px;
+}
+
+.manifesto-content {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
