@@ -1,0 +1,27 @@
+<svg id="fb01839e-e73e-4065-b769-e20c2eb2b580" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="476.4" height="476.4" viewBox="0 0 476.4 476.4">
+  <defs>
+    <style>
+      .e4663f59-088f-43b9-a372-568d1c4ff759 {
+        fill: #474747;
+      }
+
+      .fa82c167-c877-4065-89c0-d7b3d55d5365 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 6.9449px;
+      }
+    </style>
+  </defs>
+  <g id="b49ac81a-d3ab-4237-b3a5-649969cef9c2" data-name="Circle">
+    <circle class="e4663f59-088f-43b9-a372-568d1c4ff759" cx="238.2" cy="238.2" r="238.2"/>
+  </g>
+  <g id="fee2c9f6-2a2e-4d0a-9f7d-52df8c5878fe" data-name="Doors">
+    <g>
+      <polygon class="fa82c167-c877-4065-89c0-d7b3d55d5365" points="99.5 118.1 377.5 118.1 377.5 373.1 359.5 373.1 359.5 137.1 118.5 137.1 118.5 373.1 99.5 373.1 99.5 118.1"/>
+      <polygon class="fa82c167-c877-4065-89c0-d7b3d55d5365" points="129.5 145.1 204.5 164.1 203.5 353.1 129.5 372.1 129.5 145.1"/>
+      <circle class="fa82c167-c877-4065-89c0-d7b3d55d5365" cx="190.5" cy="256.1" r="6"/>
+      <polygon class="fa82c167-c877-4065-89c0-d7b3d55d5365" points="348.5 147.1 274.5 166.1 274.5 355.1 348.5 371.1 348.5 147.1"/>
+      <circle class="fa82c167-c877-4065-89c0-d7b3d55d5365" cx="287.5" cy="259.1" r="6"/>
+    </g>
+  </g>
+</svg>

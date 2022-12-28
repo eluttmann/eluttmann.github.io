@@ -1,0 +1,28 @@
+<svg id="aac6b8c7-ee5a-44f1-87e9-7f29da1f7e0b" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .eb8bf53a-9bcc-4eb8-a050-637af57d322f {
+        fill: #474747;
+      }
+
+      .b16d1cad-2879-4672-abe6-618db1e13a7d, .fd38dfeb-6588-4bb0-86cb-455fd61da238 {
+        fill: none;
+        stroke: #fff;
+      }
+
+      .fd38dfeb-6588-4bb0-86cb-455fd61da238 {
+        stroke-width: 0.8px;
+      }
+
+      .b16d1cad-2879-4672-abe6-618db1e13a7d {
+        stroke-width: 0.5px;
+      }
+    </style>
+  </defs>
+  <circle class="eb8bf53a-9bcc-4eb8-a050-637af57d322f" cx="24" cy="24" r="24"/>
+  <g>
+    <polygon class="fd38dfeb-6588-4bb0-86cb-455fd61da238" points="8.638 9.729 39.607 9.729 39.607 38.052 37.513 38.052 37.513 11.823 10.842 11.823 10.842 38.052 8.638 38.052 8.638 9.729"/>
+    <polygon class="b16d1cad-2879-4672-abe6-618db1e13a7d" points="12.054 12.704 20.32 14.798 20.21 35.848 12.054 37.942 12.054 12.704"/>
+    <polygon class="b16d1cad-2879-4672-abe6-618db1e13a7d" points="36.3 12.925 28.145 15.019 28.145 36.069 36.3 37.832 36.3 12.925"/>
+  </g>
+</svg>
